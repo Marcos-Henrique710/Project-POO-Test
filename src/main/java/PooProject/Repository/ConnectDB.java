@@ -8,7 +8,7 @@ import java.sql.Statement;
 public class ConnectDB {
     private static String PGSQL_DB = "jdbc:postgresql://localhost/dbproducts"; //consider there is a dbproducts
     private static String PGSQL_USERNAME = "postgres";
-    private static String PGSQL_PASSWORD = "postgresql";
+    private static String PGSQL_PASSWORD = "postgres";
 		/*
 		private static String PGSQL_DB = System.getenv("PGSQL_DB");
 		private static String PGSQL_USERNAME = System.getenv("PGSQL_USERNAME");
