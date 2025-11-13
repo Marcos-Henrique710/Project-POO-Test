@@ -1,4 +1,4 @@
-package org.PooProject.Model;
+package PooProject.Model;
 
 public class User {
     private String nome;

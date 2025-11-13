@@ -1,4 +1,4 @@
-package org.PooProject.Controller;
+package PooProject.Controller;
 
 public class SecundaryControler {
 }
