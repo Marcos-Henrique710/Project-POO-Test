@@ -1,4 +1,4 @@
 package PooProject.Model;
 
-public class Officer {
+public class Author {
 }

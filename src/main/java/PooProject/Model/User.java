@@ -1,42 +1,65 @@
 package PooProject.Model;
 
 public class User {
-    private String nome;
-    private String matricula;
+    private String name;
+    private Long userId;
     private String cpf;
+    private String email;
+    private String phone;
 
-    public User (String nome, String matricula, String cpf){
-        this.nome = nome;
+    public User (String name, String email , String cpf, String phone, Long userId){
+        this.name = name;
         this.cpf = cpf;
-        this.matricula = matricula;
+        this.userId = userId;
+        this.email = email;
+        this.phone = phone;
     }
 
     public String getCpf() {
-
         return cpf;
     }
 
-    public String getMatricula() {
-
-        return matricula;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
     public void setCpf(String cpf) {
-
         this.cpf = cpf;
     }
 
-    public void setMatricula(String matricula) {
-
-        this.matricula = matricula;
+    public String getName() {
+        return name;
     }
 
-    public void setNome(String nome) {
+    public void setName() {
+        this.name = name;
+    }
 
-        this.nome = nome;
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail() {
+        this.email = email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone() {
+        this.phone = phone;
+    }
+
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId() {
+        this.userId = userId;
+    }
+
+    public void authenticate() {
+
+    }
+
+    public void viewLoans() {
+
     }
 }
