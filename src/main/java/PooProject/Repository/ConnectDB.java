@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class ConnectDB {
-    private static String PGSQL_DB = "http://127.0.0.1:63509/?key=4bd98e5a-2caa-4f18-9e73-2e8b28782e21"; //consider there is a dbproducts
+    private static String PGSQL_DB = "http://127.0.0.1:53324/?key=32d21121-9374-4119-9eb3-c795941b7e36\n"; //consider there is a dbproducts
     private static String PGSQL_USERNAME = "postgres";
     private static String PGSQL_PASSWORD = "postgres";
 		/*

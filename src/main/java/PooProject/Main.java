@@ -1,4 +1,4 @@
-package PooProject.Model;
+package PooProject;
 
 public class Main {
     public static void main(String[] args) {
