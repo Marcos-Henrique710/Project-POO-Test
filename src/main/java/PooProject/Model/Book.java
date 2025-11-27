@@ -1,58 +1,99 @@
 package PooProject.Model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Book {
-    private int idBook;
-    private String title;
-    private String author;
-    private int yearPublication;
-    private String publisher;
-    private String genre;
+    private Long idLivro;
+    private String titulo;
+    private String isbn;
+    private Integer anoPublicacao;
+    private String edicao;
+    private String resumo;
 
-    public int getIdBook() {
-        return idBook;
+    private Publisher publisher;
+    private List<Author> authors = new ArrayList<>();
+    private List<Category> categories = new ArrayList<>();
+
+    public Book() {}
+
+    public Long getIdLivro() {
+        return idLivro;
     }
 
-    public void setIdBook(int idBook) {
-        this.idBook = idBook;
+    public void setIdLivro(Long idLivro) {
+        this.idLivro = idLivro;
     }
 
-    public String getTitle() {
-        return title;
+    public String getTitulo() {
+        return titulo;
+    }
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public String getIsbn() {
+        return isbn;
     }
 
-    public String getAuthor() {
-        return author;
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
     }
 
-    public void setAuthor(String author) {
-        this.author = author;
+    public Integer getAnoPublicacao() {
+        return anoPublicacao;
     }
 
-    public int getYearPublication() {
-        return yearPublication;
+    public void setAnoPublicacao(Integer anoPublicacao) {
+        this.anoPublicacao = anoPublicacao;
     }
 
-    public void setYearPublication(int yearPublication) {
-        this.yearPublication = yearPublication;
+    public String getEdicao() {
+        return edicao;
     }
 
-    public String getPublisher() {
+    public void setEdicao(String edicao) {
+        this.edicao = edicao;
+    }
+
+    public String getResumo() {
+        return resumo;
+    }
+
+    public void setResumo(String resumo) {
+        this.resumo = resumo;
+    }
+
+    public Publisher getPublisher() {
         return publisher;
     }
 
-    public void setPublisher(String publisher) {
+    public void setPublisher(Publisher publisher) {
         this.publisher = publisher;
     }
 
-    public String getGenre() {
-        return genre;
+    public List<Author> getAuthors() {
+        return authors;
     }
 
-    public void setGenre(String genre) {
-        this.genre = genre;
+    public void setAuthors(List<Author> authors) {
+        this.authors = authors;
     }
+
+    public List<Category> getCategories() {
+        return categories;
+    }
+
+    public void setCategories(List<Category> categories) {
+        this.categories = categories;
+    }
+
+    // Business methods (English)
+    public boolean checkAvailability() {
+        return false; // should be implemented via DAO/service
+    }
+
+    public int getAvailableCopies() {
+        return 0;
+    } // implemented via DAO/service
 }

@@ -1,31 +1,23 @@
 package PooProject.Model;
 
-public class Student {
-    private int id;
-    private String name;
-    private Long matriculation;
+public class Student extends User {
+    private String matricula;
+    private String curso;
 
-    public int getId() {
-        return id;
+    public String getMatricula() {
+        return matricula;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
     }
 
-    public String getName() {
-        return name;
+    public String getCurso() {
+        return curso;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Long getMatriculation() {
-        return matriculation;
-    }
-
-    public void setMatriculation(Long matriculation) {
-        this.matriculation = matriculation;
+    public void setCurso(String curso) {
+        this.curso = curso;
     }
 }
+
